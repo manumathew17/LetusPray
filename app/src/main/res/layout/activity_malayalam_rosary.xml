@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+
+
+    tools:context=".Malayalam_rosary">
+
+
+
+    <androidx.cardview.widget.CardView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        app:cardElevation="10dp"
+        android:layout_marginBottom="16dp"
+        >
+        <LinearLayout
+            android:id="@+id/rosary"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@color/colorPrimary"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:fontFamily="sans-serif"
+                    android:text="Rosary"
+                    android:textColor="@color/bg_white"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+
+
+                    >
+
+                </TextView>
+
+
+
+
+            </RelativeLayout>
+
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rosary"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <androidx.cardview.widget.CardView
+                android:clickable="true"
+
+                android:foreground="?android:attr/selectableItemBackground"
+                android:id="@+id/english_prayer"
+                android:layout_marginTop="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="8dp"
+                
+
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:orientation="vertical"
+                    android:padding="14dp"
+                    android:gravity="center_vertical">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/r_intro"
+                            android:paddingLeft="20dp"
+                            android:text="പ്രാരംഭ പ്രാർത്ഥന"
+                            android:textColor="@color/text_black"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+
+
+                            >
+
+                        </TextView>
+                    </RelativeLayout>
+
+
+
+
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:clickable="true"
+
+                android:foreground="?android:attr/selectableItemBackground"
+                android:layout_below="@id/english_prayer"
+                android:id="@+id/malayalm_prayer"
+                android:layout_marginTop="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="8dp"
+                
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:orientation="vertical"
+                    android:padding="14dp"
+                    android:gravity="center_vertical|center_horizontal">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/r_decade"
+                            android:paddingLeft="20dp"
+                            android:text="രഹസ്യങ്ങൾ"
+                            android:textColor="@color/text_black"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+
+                            >
+
+                        </TextView>
+                    </RelativeLayout>
+
+
+
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:clickable="true"
+
+                android:foreground="?android:attr/selectableItemBackground"
+                android:layout_below="@id/malayalm_prayer"
+                android:id="@+id/kannada_prayer"
+                android:layout_marginTop="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="8dp"
+                
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:orientation="vertical"
+                    android:padding="14dp"
+                    android:gravity="center_vertical|center_horizontal">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/r_conclusion"
+                            android:text="ജപമാല  സമർപ്പണം "
+                            android:textColor="@color/text_black"
+                            android:textSize="20dp"
+                            android:paddingLeft="20dp"
+                            android:textStyle="bold"
+                            >
+
+                        </TextView>
+                    </RelativeLayout>
+
+
+
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:clickable="true"
+
+                android:foreground="?android:attr/selectableItemBackground"
+                android:layout_below="@id/kannada_prayer"
+                android:id="@+id/hindi_prayer"
+                android:layout_marginTop="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="8dp"
+                
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="16dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:orientation="vertical"
+                    android:padding="14dp"
+                    android:gravity="center_vertical|center_horizontal">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="20dp"
+                            android:id="@+id/r_litany"
+                            android:text="മാതാവിന്‍റെ ലുത്തിനിയ"
+                            android:textColor="@color/text_black"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+
+                            >
+
+                        </TextView>
+                    </RelativeLayout>
+
+
+
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+
+
+</LinearLayout>

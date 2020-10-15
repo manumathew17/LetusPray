@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Info"
+   >
+    <RelativeLayout
+        android:id="@+id/info_heading"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bangers"
+            android:text="LET US PRAY"
+            android:textColor="@color/introtext_black"
+            android:textSize="36sp"
+            android:gravity="center_horizontal"
+            android:paddingTop="10dp"
+
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/message"
+            android:layout_below="@+id/title"
+            android:fontFamily="sans-serif-condensed"
+            android:text="YOUR PRAYING PARTNER"
+            android:textSize="12sp"
+            android:gravity="center_horizontal"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/about"
+            android:layout_below="@+id/title"
+            android:fontFamily="sans-serif-condensed"
+            android:text="YOUR PRAYING PARTNER"
+            android:textSize="12sp"
+            android:gravity="center_horizontal"
+            />
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/info_heading"
+        >
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/info_about"
+                android:paddingTop="15dp"
+                android:paddingLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ABOUT"
+                android:textSize="20dp"
+                />
+            <TextView
+                android:id="@+id/above_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/info_about"
+                android:text="LET US PRAY is keening to provide the prayers in english malayal and hindi"
+                android:textSize="15dp"
+                android:paddingRight="15dp"
+                android:paddingLeft="15dp"/>
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_below="@+id/above_button"
+               android:layout_margin="50dp"
+               android:gravity="center">
+               <Button
+                   android:clickable="true"
+
+
+                    android:layout_margin="30dp"
+                   android:id="@+id/feedback"
+
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_below="@id/above_button"
+                   android:padding="20dp"
+
+                   android:background="@drawable/round"
+                   android:drawableTop="@drawable/share"
+                   android:gravity="center_vertical|center_horizontal"
+
+
+
+                    />
+
+               <Button
+                   android:clickable="true"
+                   
+                   android:foreground="?android:attr/selectableItemBackground"
+                   android:layout_margin="30dp"
+                   android:id="@+id/share"
+                   style="@style/Widget.AppCompat.Button.Colored"
+                   android:layout_width="100dp"
+                   android:layout_height="wrap_content"
+                   android:layout_below="@id/above_button"
+
+                   android:background="@color/languge"
+                   android:drawableTop="@drawable/share"
+                   android:padding="10dp"
+
+
+                   android:text="share"
+                   app:cornerRadius="8dp"/>
+           </LinearLayout>
+
+
+
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>
